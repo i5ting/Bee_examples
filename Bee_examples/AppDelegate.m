@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "CatelogBoard.h"
+#import "DribbbleController.h"
+
+#import "Bee.h"
+#import "Bee_Debug.h"
+//#import "Bee_UnitTest.h"
 
 @implementation AppDelegate
 
@@ -18,10 +24,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+//    // Override point for customization after application launch.
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+	self.window.rootViewController = [BeeUIStackGroup stackGroupWithFirstStack:[BeeUIStack stackWithFirstBoard:[CatelogBoard board]]];
     [self.window makeKeyAndVisible];
+	
+	[BeeDebugger show];
+    
+    
     return YES;
 }
 
