@@ -1,6 +1,6 @@
 # Bee_MVC
 
-老郭的Beeframework
+老郭的Beeframework  https://github.com/gavinkwoe/BeeFramework/
 
 
     git submodule add https://github.com/i5ting/Bee_Vendor.git vendor/Bee_Vendor
