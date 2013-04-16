@@ -40,6 +40,11 @@ https://github.com/i5ting/Bee_Debugger
 
 https://github.com/i5ting/Bee_examples
 
+### Bee教程
+
+https://github.com/i5ting/Bee_Tutorial
+
+
 ### Bee外部依赖库
 
 https://github.com/i5ting/Bee_Vendor
